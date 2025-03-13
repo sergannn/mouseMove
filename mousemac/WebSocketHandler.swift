@@ -59,7 +59,7 @@ class WebSocketHandler: NSObject, URLSessionWebSocketDelegate {
             print("Invalid coordinate values")
             return
         }
-        
+        appDelegate.showMessage("Координаты: \(message)")
         appDelegate.moveMouseTo(x: x, y: y)
     }
     

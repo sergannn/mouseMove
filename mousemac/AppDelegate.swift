@@ -16,6 +16,17 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     var statusBarMenu: NSMenu!
     var webSocketHandler: WebSocketHandler!
     
+    func showMessage(_ message: String) {
+        DispatchQueue.main.async {
+            let alert = NSAlert()
+            alert.messageText = "Получено сообщение"
+            alert.informativeText = message
+            alert.addButton(withTitle: "OK")
+            alert.runModal()
+        }
+    }
+    
+    
     func applicationDidFinishLaunching(_ notification: Notification) {
         print("connecting")
         webSocketHandler = WebSocketHandler(appDelegate: self)
