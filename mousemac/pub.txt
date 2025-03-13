@@ -1,0 +1,31 @@
+        /*
+        let config = PubNubConfiguration(
+            publishKey: "pub-c-eb4346ff-76fb-4644-880a-7d689e2a376c",
+            subscribeKey: "sub-c-90448a24-4f60-4d09-9b98-29f66e23bd0d",
+            userId: "mouse-mover-\(UUID().uuidString)"
+        )
+        pubnub = PubNub(configuration: config)
+        
+        // Set up logging
+        PubNub.log.levels = [.all]
+        PubNub.log.writers = [ConsoleLogWriter(), FileLogWriter()]
+        
+        // Subscribe to mouse movement channel
+        let mouseChannel = "mouse-movements"
+        pubnub.subscribe(to: [mouseChannel], withPresence: true)
+        
+        // Set up message listener
+        pubnub.onMessage = { message in
+            if let payload = message.payload as? Dictionary<String, Double>,
+               let x = payload["x"],
+               let y = payload["y"] {
+                self.moveMouseTo(x: x, y: y)
+                print("Перемещение курсора в точку (\(x), \(y))")
+            }
+        }*/
+            self.pubnub.publish(
+                channel: mouseChannel,
+                message: coordinates
+            ) { result in
+                print(result.map { "Сообщение опубликовано в \($0.timetokenDate)" })
+            }

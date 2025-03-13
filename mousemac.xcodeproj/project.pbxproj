@@ -1,0 +1,440 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D65390ED2D63380400A75613 /* WebSocketHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65390EC2D63380400A75613 /* WebSocketHandler.swift */; };
+		D65390EF2D63385B00A75613 /* pub.txt in Resources */ = {isa = PBXBuildFile; fileRef = D65390EE2D63385B00A75613 /* pub.txt */; };
+		D65B88BC2D5E99AF00E1398E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65B88BB2D5E99AF00E1398E /* AppDelegate.swift */; };
+		D65B88BE2D5E99AF00E1398E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65B88BD2D5E99AF00E1398E /* ViewController.swift */; };
+		D65B88C02D5E99B200E1398E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D65B88BF2D5E99B200E1398E /* Assets.xcassets */; };
+		D65B88C32D5E99B200E1398E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D65B88C12D5E99B200E1398E /* Main.storyboard */; };
+		D65B88CC2D5E9C4700E1398E /* PubNubMembership in Frameworks */ = {isa = PBXBuildFile; productRef = D65B88CB2D5E9C4700E1398E /* PubNubMembership */; };
+		D65B88CE2D5E9C4700E1398E /* PubNubSDK in Frameworks */ = {isa = PBXBuildFile; productRef = D65B88CD2D5E9C4700E1398E /* PubNubSDK */; };
+		D65B88D02D5E9C4700E1398E /* PubNubSpace in Frameworks */ = {isa = PBXBuildFile; productRef = D65B88CF2D5E9C4700E1398E /* PubNubSpace */; };
+		D65B88D22D5E9C4700E1398E /* PubNubUser in Frameworks */ = {isa = PBXBuildFile; productRef = D65B88D12D5E9C4700E1398E /* PubNubUser */; };
+		D65B88D42D5E9CA100E1398E /* PubNubMembership in Frameworks */ = {isa = PBXBuildFile; productRef = D65B88D32D5E9CA100E1398E /* PubNubMembership */; };
+		D65B88D62D5E9CA100E1398E /* PubNubSDK in Frameworks */ = {isa = PBXBuildFile; productRef = D65B88D52D5E9CA100E1398E /* PubNubSDK */; };
+		D65B88D82D5E9CA100E1398E /* PubNubSpace in Frameworks */ = {isa = PBXBuildFile; productRef = D65B88D72D5E9CA100E1398E /* PubNubSpace */; };
+		D65B88DA2D5E9CA100E1398E /* PubNubUser in Frameworks */ = {isa = PBXBuildFile; productRef = D65B88D92D5E9CA100E1398E /* PubNubUser */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D65390EC2D63380400A75613 /* WebSocketHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketHandler.swift; sourceTree = "<group>"; };
+		D65390EE2D63385B00A75613 /* pub.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = pub.txt; sourceTree = "<group>"; };
+		D65B88B82D5E99AF00E1398E /* mousemac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mousemac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D65B88BB2D5E99AF00E1398E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D65B88BD2D5E99AF00E1398E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D65B88BF2D5E99B200E1398E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D65B88C22D5E99B200E1398E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D65B88C42D5E99B300E1398E /* mousemac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = mousemac.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D65B88B52D5E99AF00E1398E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D65B88CC2D5E9C4700E1398E /* PubNubMembership in Frameworks */,
+				D65B88D22D5E9C4700E1398E /* PubNubUser in Frameworks */,
+				D65B88D02D5E9C4700E1398E /* PubNubSpace in Frameworks */,
+				D65B88D62D5E9CA100E1398E /* PubNubSDK in Frameworks */,
+				D65B88D42D5E9CA100E1398E /* PubNubMembership in Frameworks */,
+				D65B88DA2D5E9CA100E1398E /* PubNubUser in Frameworks */,
+				D65B88D82D5E9CA100E1398E /* PubNubSpace in Frameworks */,
+				D65B88CE2D5E9C4700E1398E /* PubNubSDK in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D65B88AF2D5E99AF00E1398E = {
+			isa = PBXGroup;
+			children = (
+				D65B88BA2D5E99AF00E1398E /* mousemac */,
+				D65B88B92D5E99AF00E1398E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D65B88B92D5E99AF00E1398E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D65B88B82D5E99AF00E1398E /* mousemac.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D65B88BA2D5E99AF00E1398E /* mousemac */ = {
+			isa = PBXGroup;
+			children = (
+				D65B88BB2D5E99AF00E1398E /* AppDelegate.swift */,
+				D65390EE2D63385B00A75613 /* pub.txt */,
+				D65B88BD2D5E99AF00E1398E /* ViewController.swift */,
+				D65B88BF2D5E99B200E1398E /* Assets.xcassets */,
+				D65B88C12D5E99B200E1398E /* Main.storyboard */,
+				D65B88C42D5E99B300E1398E /* mousemac.entitlements */,
+				D65390EC2D63380400A75613 /* WebSocketHandler.swift */,
+			);
+			path = mousemac;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D65B88B72D5E99AF00E1398E /* mousemac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D65B88C72D5E99B300E1398E /* Build configuration list for PBXNativeTarget "mousemac" */;
+			buildPhases = (
+				D65B88B42D5E99AF00E1398E /* Sources */,
+				D65B88B52D5E99AF00E1398E /* Frameworks */,
+				D65B88B62D5E99AF00E1398E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mousemac;
+			packageProductDependencies = (
+				D65B88CB2D5E9C4700E1398E /* PubNubMembership */,
+				D65B88CD2D5E9C4700E1398E /* PubNubSDK */,
+				D65B88CF2D5E9C4700E1398E /* PubNubSpace */,
+				D65B88D12D5E9C4700E1398E /* PubNubUser */,
+				D65B88D32D5E9CA100E1398E /* PubNubMembership */,
+				D65B88D52D5E9CA100E1398E /* PubNubSDK */,
+				D65B88D72D5E9CA100E1398E /* PubNubSpace */,
+				D65B88D92D5E9CA100E1398E /* PubNubUser */,
+			);
+			productName = mousemac;
+			productReference = D65B88B82D5E99AF00E1398E /* mousemac.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D65B88B02D5E99AF00E1398E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					D65B88B72D5E99AF00E1398E = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = D65B88B32D5E99AF00E1398E /* Build configuration list for PBXProject "mousemac" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D65B88AF2D5E99AF00E1398E;
+			packageReferences = (
+				D65B88CA2D5E9C4700E1398E /* XCRemoteSwiftPackageReference "swift" */,
+			);
+			productRefGroup = D65B88B92D5E99AF00E1398E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D65B88B72D5E99AF00E1398E /* mousemac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D65B88B62D5E99AF00E1398E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D65390EF2D63385B00A75613 /* pub.txt in Resources */,
+				D65B88C02D5E99B200E1398E /* Assets.xcassets in Resources */,
+				D65B88C32D5E99B200E1398E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D65B88B42D5E99AF00E1398E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D65390ED2D63380400A75613 /* WebSocketHandler.swift in Sources */,
+				D65B88BE2D5E99AF00E1398E /* ViewController.swift in Sources */,
+				D65B88BC2D5E99AF00E1398E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D65B88C12D5E99B200E1398E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D65B88C22D5E99B200E1398E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D65B88C52D5E99B300E1398E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D65B88C62D5E99B300E1398E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		D65B88C82D5E99B300E1398E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = mousemac/mousemac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W3N4W6AVQA;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ser.mouse.mousemac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D65B88C92D5E99B300E1398E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = mousemac/mousemac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W3N4W6AVQA;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ser.mouse.mousemac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D65B88B32D5E99AF00E1398E /* Build configuration list for PBXProject "mousemac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D65B88C52D5E99B300E1398E /* Debug */,
+				D65B88C62D5E99B300E1398E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D65B88C72D5E99B300E1398E /* Build configuration list for PBXNativeTarget "mousemac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D65B88C82D5E99B300E1398E /* Debug */,
+				D65B88C92D5E99B300E1398E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D65B88CA2D5E9C4700E1398E /* XCRemoteSwiftPackageReference "swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pubnub/swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.3.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D65B88CB2D5E9C4700E1398E /* PubNubMembership */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D65B88CA2D5E9C4700E1398E /* XCRemoteSwiftPackageReference "swift" */;
+			productName = PubNubMembership;
+		};
+		D65B88CD2D5E9C4700E1398E /* PubNubSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D65B88CA2D5E9C4700E1398E /* XCRemoteSwiftPackageReference "swift" */;
+			productName = PubNubSDK;
+		};
+		D65B88CF2D5E9C4700E1398E /* PubNubSpace */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D65B88CA2D5E9C4700E1398E /* XCRemoteSwiftPackageReference "swift" */;
+			productName = PubNubSpace;
+		};
+		D65B88D12D5E9C4700E1398E /* PubNubUser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D65B88CA2D5E9C4700E1398E /* XCRemoteSwiftPackageReference "swift" */;
+			productName = PubNubUser;
+		};
+		D65B88D32D5E9CA100E1398E /* PubNubMembership */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D65B88CA2D5E9C4700E1398E /* XCRemoteSwiftPackageReference "swift" */;
+			productName = PubNubMembership;
+		};
+		D65B88D52D5E9CA100E1398E /* PubNubSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D65B88CA2D5E9C4700E1398E /* XCRemoteSwiftPackageReference "swift" */;
+			productName = PubNubSDK;
+		};
+		D65B88D72D5E9CA100E1398E /* PubNubSpace */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D65B88CA2D5E9C4700E1398E /* XCRemoteSwiftPackageReference "swift" */;
+			productName = PubNubSpace;
+		};
+		D65B88D92D5E9CA100E1398E /* PubNubUser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D65B88CA2D5E9C4700E1398E /* XCRemoteSwiftPackageReference "swift" */;
+			productName = PubNubUser;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = D65B88B02D5E99AF00E1398E /* Project object */;
+}
